@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     groq_api_key: str
     drive_folder_id: str
     google_credentials_path: str = "credentials.json"
+    google_credentials_json: str | None = None
     backend_url: str = "http://localhost:8000"
     max_history_length: int = 20
     llm_model: str = "llama-3.3-70b-versatile"
